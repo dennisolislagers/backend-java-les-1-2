@@ -12,6 +12,7 @@ package nl.novi.jp.methods.beginner;
 public class BeginnerTwo {
     public static void main(String[] args) {
         printFact();
+        printAnotherFact();
     }
 
     public static void printFact() {
@@ -19,6 +20,21 @@ public class BeginnerTwo {
     }
 
     public static void printAnotherFact() {
-        System.out.println("Je kunt System.out.println versneld typen door 'sout' + 'Enter' te typen");
+        System.out.println("Je kunt System.out.println versneld typen door 'sout' + 'Tab' te typen");
+    }
+
+    /**
+     * Maak een methode die jump() heet en de tekst "You jumped" print.
+     *
+     * Roep deze methode vervolgens aan.
+     */
+    public static class BeginnerFour {
+        public static void main(String[] args) {
+            jump();
+        }
+
+        public static void jump() {
+            System.out.println("You jumped");
+        }
     }
 }
