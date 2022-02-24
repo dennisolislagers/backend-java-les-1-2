@@ -10,4 +10,12 @@ package nl.novi.jp.methods.junior;
  */
 
 public class JuniorFive {
+    public static void main(String[] args) {
+            toCapital("dennis");
+            toCapital("roger");
+    }
+
+    public static void toCapital(String word) {
+        System.out.println(word.toUpperCase());
+    }
 }

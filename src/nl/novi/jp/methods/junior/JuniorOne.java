@@ -16,10 +16,11 @@ public class JuniorOne {
     }
 
     public static void greetName(String name) {
+
         System.out.println("Hello " + name);
     }
 
     public static void sayGoodbyeToName(String name) {
-        // write your code here
+        System.out.println("Goodbye " + name);
     }
 }
