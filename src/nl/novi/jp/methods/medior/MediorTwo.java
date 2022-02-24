@@ -10,6 +10,14 @@ public class MediorTwo {
 
     public static void main(String[] args) {
 
+        int age = 12;
+
+//        De twee methodes aanmaken die aangesproken worden die aangesproken worden door de boolean.
+    if (isOldEnough (age) == true) {
+        printProceed();
+    }else{
+        printUnderAgeWarning();
+    }
     }
 
     public  static boolean isOldEnough(int age) {

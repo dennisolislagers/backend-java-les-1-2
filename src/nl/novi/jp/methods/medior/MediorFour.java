@@ -25,7 +25,10 @@ public class MediorFour {
     public static void main(String[] args) {
 
         List<Integer> result = numberStringToArrayList("123123145");
-
+// Eerst gaan we de methode maken die de nummers in cijfers naar nummers in letters maakt.
+        List<String> resultWords = numberListToStringList(result);
+//Vervolgens moet straks de methode aangesproken worden.
+        printNumbers(resultWords);
     }
 
     public static List<Integer> numberStringToArrayList(String numbers) {
@@ -40,6 +43,10 @@ public class MediorFour {
     //TODO: Maak deze methode af.
     public static List<String> numberListToStringList(List<Integer> numbers) {
         List<String> wordNumbers = new ArrayList<>();
+//De string wordnumbers wordt gevuld met de nummers
+        for(int number : numbers)  {
+            wordNumbers.add(numberToWord(number));
+        }
 
         return wordNumbers;
     }
@@ -72,8 +79,19 @@ public class MediorFour {
     }
 
     //TODO Maak deze methode af.
-    public static void printNumbers() {
+    public static void printNumbers(List<String> numberWords) {
+        int arraySize = numberWords.size();
+        String finalString = "";
 
+        for (int i = 0; i < numberWords.size(); i++) {
+            finalString = finalString + numberWords.get(i);
+
+
+            if(i + 1 != arraySize) {
+                finalString = finalString + "-";
+            }
+        }
+        System.out.println(finalString);
     }
 
 }
